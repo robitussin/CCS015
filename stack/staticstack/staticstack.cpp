@@ -1,15 +1,15 @@
 #include <iostream>
-#include "staticintstack.h"
+#include "staticstack.h"
 using namespace std;
 
-StaticIntStack::StaticIntStack(int size)
+StaticStack::StaticStack(int size)
 {
     stackArray = new int[size];
     stackSize = size;
     top = -1;
 }
 
-void StaticIntStack::push(int num)
+void StaticStack::push(int num)
 {
     if (isFull())
     {
@@ -22,7 +22,7 @@ void StaticIntStack::push(int num)
     }
 }
 
-void StaticIntStack::pop(int &num)
+void StaticStack::pop(int &num)
 {
     if (isEmpty())
     {
@@ -35,7 +35,7 @@ void StaticIntStack::pop(int &num)
     }
 }
 
-bool StaticIntStack::isFull()
+bool StaticStack::isFull()
 {
     bool status;
 
@@ -51,7 +51,7 @@ bool StaticIntStack::isFull()
     return status;
 }
 
-bool StaticIntStack::isEmpty()
+bool StaticStack::isEmpty()
 {
     bool status;
 

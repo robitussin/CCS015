@@ -1,10 +1,10 @@
 #include <iostream>
-#include "staticintstack.h"
+#include "staticstack.h"
 using namespace std;
 
 int main()
 {
-    StaticIntStack stack(5);
+    StaticStack stack(5);
     int catchVar;
 
     cout << "Pushing 5\n";

@@ -1,4 +1,4 @@
-class StaticIntStack
+class StaticStack
 {
 private:
     int *stackArray;
@@ -6,7 +6,7 @@ private:
     int top;
 
 public:
-    StaticIntStack(int size);
+    StaticStack(int size);
     void push(int num);
     void pop(int &num);
     bool isFull();
