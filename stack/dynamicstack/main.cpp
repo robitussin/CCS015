@@ -1,5 +1,5 @@
 #include <iostream>
-#include "DynamicIntstack.h"
+#include "dynamicintstack.h"
 using namespace std;
 
 int main()
