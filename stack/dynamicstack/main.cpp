@@ -1,10 +1,10 @@
 #include <iostream>
-#include "dynamicintstack.h"
+#include "dynamicstack.h"
 using namespace std;
 
 int main()
 {
-    DynamicIntstack stack;
+    DynamicStack stack;
     int catchVar;
 
     cout << "Pushing 5\n";

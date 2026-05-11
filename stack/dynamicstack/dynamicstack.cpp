@@ -1,8 +1,8 @@
 #include <iostream>
-#include "dynamicintstack.h"
+#include "dynamicstack.h"
 using namespace std;
 
-void DynamicIntstack::push(int num)
+void DynamicStack::push(int num)
 {
     StackNode *newNode;
 
@@ -21,7 +21,7 @@ void DynamicIntstack::push(int num)
     }
 }
 
-void DynamicIntstack::pop(int &num)
+void DynamicStack::pop(int &num)
 {
     StackNode *temp;
 
@@ -38,7 +38,7 @@ void DynamicIntstack::pop(int &num)
     }
 }
 
-bool DynamicIntstack::isEmpty()
+bool DynamicStack::isEmpty()
 {
     bool status;
 

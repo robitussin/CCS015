@@ -1,4 +1,4 @@
-class DynamicIntstack
+class DynamicStack
 {
 private:
     struct StackNode
@@ -10,7 +10,7 @@ private:
     StackNode *top;
 
 public:
-    DynamicIntstack()
+    DynamicStack()
     {
         top = nullptr;
     }
