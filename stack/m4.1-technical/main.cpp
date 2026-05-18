@@ -15,6 +15,6 @@ int main()
     for (int x = 0; x < mystring.size(); x++)
     {
         cout << "Pushing " << mystring[x] << endl;
-        iStack.push(x);
+        iStack.push(mystring[x]);
     }
 }
