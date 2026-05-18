@@ -34,10 +34,26 @@ public:
     T pop() 
     {
         //TODO
+        if (top == -1) 
+        {
+            cout << "Stack is empty\n";
+            return -1; // Assuming T can be compared to -1, otherwise this should be handled differently
+        }
+        else 
+        {
+            int element = a[top];
+            top--;
+            return element;
+        }
     }
     void display() 
     {
-        //TODO
+        for(int i = top; i >= 0; i--) 
+        {
+            cout << a[i] << " ";
+
+        }
+        cout << endl;
     }
     void operations() 
     {
@@ -85,34 +101,14 @@ public:
 
 int main() 
 {
-    // int size;
+    int size;
 
-    // cout << "Enter the size of the stack: ";
-    // cin >> size;
+    cout << "Enter the size of the stack: ";
+    cin >> size;
 
-    // Stack<int> s(size);
+    Stack<int> s(size);
 
-    // s.operations();
-
-    string mystring;
-    stack<int, vector<int>> iStack;
-
-    cout << "Enter a string of braces: ";
-    cin >> mystring;
-
-    for (int x = 0; x < mystring.size(); x++)
-    {
-        cout << "Pushing " << x << endl;
-        iStack.push(x);
-    }
-
-    // cout << "The size of the stack is ";
-    // cout << iStack.size() << endl;
-    // for (x = 2; x < 8; x += 2)
-    // {
-    //     cout << "Popping " << iStack.top() << endl;
-    //     iStack.pop();
-    // }
+    s.operations();
 
     return 0;
 }
